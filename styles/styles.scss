@@ -1,0 +1,49 @@
+// VARIABLES
+$lighter-blue : #CAE1F1;
+$light-blue : #9CC9E9;
+$main-blue : #0898FF;
+$dark-blue : #145287;
+$darker-blue : #07213D;
+$light-grey : #DCDBDD;
+$grey : #939BA1;
+$dark-grey : #2A2A2A;
+
+*, html {
+    // font-family: century-gothic,sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: end;
+    background-color: $light-grey;
+    font-weight: bold;
+    letter-spacing: 1px;
+    $header-padding : 15px;
+    padding: $header-padding $header-padding $header-padding+5px;
+
+    ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+
+        li {
+            padding-left: 15px;
+            padding-right: 15px;
+
+            a {
+                text-decoration: none;
+                color: black;
+                border-bottom: 2px solid transparent;
+                transition: 0.1s;
+
+                &:hover {
+                    $hover-link-color : $dark-blue;
+                    color: $hover-link-color;
+                    border-bottom: 2px solid $hover-link-color;
+                }
+            }
+        }
+    }
+}

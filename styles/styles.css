@@ -1,0 +1,44 @@
+*, html {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  background-color: #DCDBDD;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 15px 15px 20px;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+header ul li {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: black;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+header ul li a:hover {
+  color: #145287;
+  border-bottom: 2px solid #145287;
+}
+/*# sourceMappingURL=styles.css.map */
