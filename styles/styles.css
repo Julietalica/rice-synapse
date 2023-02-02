@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 h1, h2 {
   font-weight: bold;
   letter-spacing: 15px;
@@ -13,12 +17,7 @@ h1 {
 }
 
 h2 {
-  font-size: 50px;
   margin-bottom: 20px;
-}
-
-h3 {
-  font-size: 32px;
 }
 
 a {
@@ -29,11 +28,9 @@ a {
   max-width: 1200px;
   padding: 0 50px;
 }
-
 .section-text h1 {
   text-shadow: 0px 10px rgba(20, 82, 135, 0.7);
-  margin-top: 20px;
-  margin-bottom: 50px;
+  margin: 20px 0;
 }
 
 .program-title {
@@ -47,13 +44,9 @@ a {
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: fixed;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   background-color: white;
   width: 100%;
   font-weight: bold;
@@ -61,59 +54,41 @@ header {
   text-align: center;
   padding: 20px 20px 25px;
 }
-
 header ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   list-style: none;
   margin: 0;
 }
-
 header ul li {
   padding-left: 15px;
   padding-right: 15px;
 }
-
 header ul li a {
   color: #145287;
   border-bottom: 2px solid transparent;
-  -webkit-transition: 0.15s;
   transition: 0.15s;
 }
-
 header ul li a:hover {
   color: #145287;
   border-bottom: 2px solid #145287;
 }
 
 #landing {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(220, 219, 221, 0.5)), to(rgba(20, 82, 135, 0.5))), url("/media/rice university sunset.jpg");
   background-image: linear-gradient(to bottom, rgba(220, 219, 221, 0.5), rgba(20, 82, 135, 0.5)), url("/media/rice university sunset.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: white;
   text-align: center;
 }
-
 #landing img {
-  max-width: 300px;
+  max-width: 225px;
 }
 
 #programs .program-boxes {
@@ -121,66 +96,40 @@ header ul li a:hover {
   color: white;
   text-align: center;
 }
-
 #programs .program-boxes .program-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 35px;
 }
-
 #programs .program-boxes .program-box .program-text {
   max-width: 430px;
 }
-
 #programs .program-boxes .program-box a {
   color: white;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-
 #programs .program-boxes .program-box a:hover {
   text-shadow: 0px 6px rgba(7, 33, 61, 0.5);
 }
-
 #programs .program-boxes .program-box:nth-child(1) {
   background-color: #9CC9E9;
 }
-
 #programs .program-boxes .program-box:nth-child(2) {
   background-color: #0898FF;
 }
-
 #programs .program-boxes .program-box:nth-child(3) {
   background-color: #145287;
 }
 
 #about {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   padding: 50px;
 }
 
@@ -188,5 +137,4 @@ footer {
   background-color: #145287;
   color: white;
   padding: 50px;
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
