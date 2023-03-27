@@ -41,6 +41,31 @@ button {
     letter-spacing: 3px;
 }
 
+.lighter-blue {
+    color: $lighter-blue;
+}
+.light-blue {
+    color: $light-blue;
+}
+.main-blue {
+    color: $main-blue;
+}
+.dark-blue {
+    color: $dark-blue;
+}
+.darker-blue {
+    color: $darker-blue;
+}
+.light-grey {
+    color: $light-grey;
+}
+.grey {
+    color: $grey;
+}
+.dark-grey {
+    color: $dark-grey;
+}
+
 .box-hover-shadow {
     transition: 0.2s;
 
@@ -120,7 +145,7 @@ header {
 
 #landing {
     background-image: linear-gradient(to bottom, rgba($color: $light-grey, $alpha: 0.5), rgba($color: $dark-blue, $alpha: 0.5)),
-        url("/rice-synapse/media/rice\ university\ sunset.jpg");
+        url("/media/rice\ university\ sunset.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; 
