@@ -17,15 +17,14 @@ html {
     overflow-x: hidden;
 }
 
-h1, h2 {
+h1 {
     font-weight: bold;
     letter-spacing: 15px;
-}
-h1 {
     font-size: 80px;
 }
 h2 {
-    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 5px;
 }
 
 a {
@@ -53,8 +52,14 @@ button {
 .dark-blue {
     color: $dark-blue;
 }
+.dark-blue-bg {
+    background-color: $dark-blue;
+}
 .darker-blue {
     color: $darker-blue;
+}
+.darker-blue-bg {
+    background-color: $darker-blue;
 }
 .light-grey {
     color: $light-grey;
@@ -64,6 +69,9 @@ button {
 }
 .dark-grey {
     color: $dark-grey;
+}
+.white {
+    color: white;
 }
 
 .box-hover-shadow {
@@ -94,6 +102,10 @@ button {
     max-width: 800px;
 }
 
+.header-padding {
+    padding-top: 110px;
+}
+
 .section-text {
     max-width: 1200px;
     padding: 0 50px;
@@ -110,19 +122,17 @@ button {
     margin-bottom: 15px;
 }
 
-.dark-blue {
-    color: $dark-blue;
-}
-
 header {
     display: flex;
     position: fixed;
     justify-content: center;
     background-color: white;
     width: 100%;
+    height: 70px;
     font-weight: bold;
     letter-spacing: 1px;
     text-align: center;
+    z-index: 100;
     $header-padding : 20px;
     padding: $header-padding $header-padding $header-padding+5px;
 
@@ -205,14 +215,15 @@ header {
     }
 }
 
-#about {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
+#team {
+    .member {
+        padding: 30px;
+        color: $dark-blue;
+
+        &.right {
+            background-color: $lighter-blue;
+        }
+    }
 }
 
 footer {
