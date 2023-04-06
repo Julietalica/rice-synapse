@@ -30,7 +30,8 @@
     <script src="https://kit.fontawesome.com/315845a82f.js" crossorigin="anonymous"></script>
 
     <!-- Website CSS -->
-    <link rel="stylesheet" type="text/css" href="/rice-synapse/styles/styles.css">
+    <!-- <link rel="stylesheet" type="text/css" href="/rice-synapse/styles/styles.css"> -->
+    <link rel="stylesheet" type="text/css" href="/styles/styles.css">
     <!-- <link rel="stylesheet" type="text/css" href="/styles/media.css"> -->
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -40,16 +41,22 @@
     <!-- load header into div with id="header" -->
     <script>
         $(function () {
+            $("#header").load("/insertables/header.html");
+            $("#footer").load("/insertables/footer.html");
+        });
+    </script>
+    <!-- <script>
+        $(function () {
             $("#header").load("/rice-synapse/insertables/header.html");
             $("#footer").load("/rice-synapse/insertables/footer.html");
         });
-    </script>
+    </script> -->
 
     <title>HOME | Rice Synapse</title>
 </head>
 <body>
     <!-- HEADER -->
-    <!-- <div id="header"></div> -->
+    <div id="header"></div>
 
     <section id="landing">
         <img src="/rice-synapse/media/Synapse+Logo_Transparent.png" alt="">
