@@ -7,17 +7,15 @@ html {
   overflow-x: hidden;
 }
 
-h1, h2 {
+h1 {
   font-weight: bold;
   letter-spacing: 15px;
-}
-
-h1 {
   font-size: 80px;
 }
 
 h2 {
-  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 5px;
 }
 
 a {
@@ -33,25 +31,70 @@ button {
   letter-spacing: 3px;
 }
 
-.box-hover-shadow {
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+.lighter-blue {
+  color: #CAE1F1;
 }
 
+.light-blue {
+  color: #9CC9E9;
+}
+
+.main-blue {
+  color: #0898FF;
+}
+
+.dark-blue {
+  color: #145287;
+}
+
+.dark-blue-bg {
+  background-color: #145287;
+}
+
+.darker-blue {
+  color: #07213D;
+}
+
+.darker-blue-bg {
+  background-color: #07213D;
+}
+
+.light-grey {
+  color: #DCDBDD;
+}
+
+.grey {
+  color: #939BA1;
+}
+
+.dark-grey {
+  color: #2A2A2A;
+}
+
+.white {
+  color: white;
+}
+
+.box-hover-shadow {
+  transition: 0.2s;
+}
 .box-hover-shadow:hover {
-  -webkit-box-shadow: 0px 6px rgba(7, 33, 61, 0.5);
-          box-shadow: 0px 6px rgba(7, 33, 61, 0.5);
-  -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
+  box-shadow: 0px 6px rgba(7, 33, 61, 0.5);
+  transform: translateY(-3px);
 }
 
 .text-hover-shadow {
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-
 .text-hover-shadow:hover {
   text-shadow: 0px 6px rgba(7, 33, 61, 0.5);
+}
+
+.center {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main {
@@ -59,11 +102,14 @@ button {
   max-width: 800px;
 }
 
+.header-padding {
+  padding-top: 110px;
+}
+
 .section-text {
   max-width: 1200px;
   padding: 0 50px;
 }
-
 .section-text h1 {
   text-shadow: 0px 10px rgba(20, 82, 135, 0.7);
   margin: 20px 0;
@@ -75,76 +121,52 @@ button {
   margin-bottom: 15px;
 }
 
-.dark-blue {
-  color: #145287;
-}
-
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: fixed;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   background-color: white;
   width: 100%;
+  height: 70px;
   font-weight: bold;
   letter-spacing: 1px;
   text-align: center;
+  z-index: 100;
   padding: 20px 20px 25px;
 }
-
 header ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   list-style: none;
   margin: 0;
 }
-
 header ul li {
   padding-left: 15px;
   padding-right: 15px;
 }
-
 header ul li a {
   color: #145287;
   border-bottom: 2px solid transparent;
-  -webkit-transition: 0.15s;
   transition: 0.15s;
 }
-
 header ul li a:hover {
   color: #145287;
   border-bottom: 2px solid #145287;
 }
 
 #landing {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(220, 219, 221, 0.5)), to(rgba(20, 82, 135, 0.5))), url("/rice-synapse/media/rice university sunset.jpg");
-  background-image: linear-gradient(to bottom, rgba(220, 219, 221, 0.5), rgba(20, 82, 135, 0.5)), url("/rice-synapse/media/rice university sunset.jpg");
+  background-image: linear-gradient(to bottom, rgba(220, 219, 221, 0.5), rgba(20, 82, 135, 0.5)), url("/media/rice university sunset.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: white;
   text-align: center;
 }
-
 #landing img {
   max-width: 225px;
 }
@@ -154,114 +176,69 @@ header ul li a:hover {
   color: white;
   text-align: center;
 }
-
 #programs .program-boxes .program-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 35px;
 }
-
 #programs .program-boxes .program-box .program-text {
   max-width: 430px;
 }
-
 #programs .program-boxes .program-box a {
   color: white;
 }
-
 #programs .program-boxes .program-box:nth-child(1) {
   background-color: #9CC9E9;
 }
-
 #programs .program-boxes .program-box:nth-child(2) {
   background-color: #0898FF;
 }
-
 #programs .program-boxes .program-box:nth-child(3) {
   background-color: #145287;
 }
 
-#about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 50px;
+#team .member {
+  padding: 30px;
+  color: #145287;
+}
+#team .member.right {
+  background-color: #CAE1F1;
 }
 
 footer {
   background-color: #145287;
   color: white;
   padding: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   text-align: center;
 }
-
 footer ul {
   list-style: none;
   padding: 0;
 }
-
 footer a {
   color: white;
   border-bottom: 2px solid transparent;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-
 footer a:hover {
   color: #9CC9E9;
 }
-
 footer a.underline-hover:hover {
   border-bottom: 2px solid #9CC9E9;
 }
-
 footer .navigate-links li {
   margin: 10px 0;
 }
-
 footer .icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-size: 32px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 footer .icons li {
   padding: 0px 10px;
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
