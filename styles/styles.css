@@ -31,6 +31,15 @@ button {
   letter-spacing: 3px;
 }
 
+ul {
+  padding-left: 0;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .lighter-blue {
   color: #CAE1F1;
 }
@@ -107,6 +116,7 @@ button {
 }
 
 .section-text {
+  width: 100%;
   max-width: 1200px;
   padding: 0 50px;
 }
@@ -132,7 +142,7 @@ header {
   letter-spacing: 1px;
   text-align: center;
   z-index: 100;
-  padding: 20px 20px 25px;
+  padding: 20px;
 }
 header ul {
   display: flex;
@@ -241,4 +251,11 @@ footer .icons {
 }
 footer .icons li {
   padding: 0px 10px;
+}
+
+@media screen and (max-width: 520px) {
+  .section-text h1 {
+    font-size: 54px;
+    letter-spacing: 10px;
+  }
 }/*# sourceMappingURL=styles.css.map */

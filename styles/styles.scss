@@ -39,6 +39,14 @@ button {
     font-weight: bold;
     letter-spacing: 3px;
 }
+ul {
+    padding-left: 0;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
 
 .lighter-blue {
     color: $lighter-blue;
@@ -107,6 +115,7 @@ button {
 }
 
 .section-text {
+    width: 100%;
     max-width: 1200px;
     padding: 0 50px;
 
@@ -134,7 +143,7 @@ header {
     text-align: center;
     z-index: 100;
     $header-padding : 20px;
-    padding: $header-padding $header-padding $header-padding+5px;
+    padding: $header-padding;
 
     ul {
         display: flex;
@@ -267,6 +276,15 @@ footer {
 
         li {
             padding: 0px 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .section-text {
+        h1 {
+            font-size: 54px;
+            letter-spacing: 10px;
         }
     }
 }
